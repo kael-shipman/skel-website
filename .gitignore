@@ -1,0 +1,10 @@
+*.swp
+*.swo
+*vendor
+*.local
+*.local.*
+*.bak
+~*
+db/*
+tmp
+content/pages
