@@ -1,0 +1,830 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "1d853f197441367fe72176f4b3f1d149",
+    "packages": [
+        {
+            "name": "erusev/parsedown",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "20ff8bbb57205368b4b42d094642a3e52dac85fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/20ff8bbb57205368b4b42d094642a3e52dac85fb",
+                "reference": "20ff8bbb57205368b4b42d094642a3e52dac85fb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "time": "2016-11-02T15:56:58+00:00"
+        },
+        {
+            "name": "erusev/parsedown-extra",
+            "version": "0.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/parsedown-extra.git",
+                "reference": "0db5cce7354e4b76f155d092ab5eb3981c21258c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/parsedown-extra/zipball/0db5cce7354e4b76f155d092ab5eb3981c21258c",
+                "reference": "0db5cce7354e4b76f155d092ab5eb3981c21258c",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "~1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ParsedownExtra": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "An extension of Parsedown that adds support for Markdown Extra.",
+            "homepage": "https://github.com/erusev/parsedown-extra",
+            "keywords": [
+                "markdown",
+                "markdown extra",
+                "parsedown",
+                "parser"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/parsedown-extra/tree/0.7.1"
+            },
+            "time": "2015-11-01T10:19:22+00:00"
+        },
+        {
+            "name": "skel/app",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/skelphp-app.git",
+                "reference": "2ef401837fbce50e29364d3a4acb317679c82707"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/skelphp-app/zipball/2ef401837fbce50e29364d3a4acb317679c82707",
+                "reference": "2ef401837fbce50e29364d3a4acb317679c82707",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "skel/component": "~0.0",
+                "skel/header": "~0.0",
+                "skel/http-foundation": "~0.0",
+                "skel/traits": "~0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Skel\\": "src/"
+                }
+            },
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Kael Shipman",
+                    "email": "kael.shipman@gmail.com",
+                    "homepage": "https://colors.kaelshipman.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "App is a component of the Skel framework designed to coordinate various other components to create a cohesive application. It is meant to be extended by a custom class that the site developer can use to create custom functionality.",
+            "keywords": [
+                "application framework",
+                "framework"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/skelphp-app/tree/v0.2.1",
+                "issues": "https://github.com/kael-shipman/skelphp-app/issues"
+            },
+            "time": "2017-01-20T22:29:05+00:00"
+        },
+        {
+            "name": "skel/cms",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/skelphp-cms.git",
+                "reference": "f4df44e204162bed74ab32f281b7953de4db1dfd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/skelphp-cms/zipball/f4df44e204162bed74ab32f281b7953de4db1dfd",
+                "reference": "f4df44e204162bed74ab32f281b7953de4db1dfd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "skel/db": "~0.0",
+                "skel/header": "~0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Skel\\": "src/"
+                }
+            },
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Kael Shipman",
+                    "email": "kael.shipman@gmail.com",
+                    "homepage": "https://colors.kaelshipman.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The Skel CMS is intended to be a highly-customizable, bare-bones CMS based on content types that each extend the basic Content class. Websites will typically use the Page class, which adds a URI, image, title, meta tags, and other such things to the basic Content class, but other classes are certainly possible. For example, one might build a Video class that stores information about youtube or vimeo videos. The advantage of this is that each custom content type is a class that can have its own built-in functionality.",
+            "keywords": [
+                "CMS",
+                "blog platform",
+                "blogging",
+                "content management system"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/skelphp-cms/tree/v0.2",
+                "issues": "https://github.com/kael-shipman/skelphp-cms/issues"
+            },
+            "time": "2017-01-20T22:03:11+00:00"
+        },
+        {
+            "name": "skel/component",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/skelphp-component.git",
+                "reference": "54e7d95f1c7816bfb4a268016ed06c4cae0caf10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/skelphp-component/zipball/54e7d95f1c7816bfb4a268016ed06c4cae0caf10",
+                "reference": "54e7d95f1c7816bfb4a268016ed06c4cae0caf10",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "skel/header": "~0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Skel\\": "src/"
+                }
+            },
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Kael Shipman",
+                    "email": "kael.shipman@gmail.com",
+                    "homepage": "https://colors.kaelshipman.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is a library that provides classes for Data Components, Component Collections and Templates for displaying Components. These classes are central to the Skel framework, as they provide a structure in which to pass data around between libraries.",
+            "keywords": [
+                "component",
+                "data display",
+                "template",
+                "templating"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/skelphp-component/tree/v0.2",
+                "issues": "https://github.com/kael-shipman/skelphp-component/issues"
+            },
+            "time": "2017-01-20T21:02:47+00:00"
+        },
+        {
+            "name": "skel/config",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/skelphp-config.git",
+                "reference": "bb0beb130b6f1438b3e9471a500f92c6249f4f40"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/skelphp-config/zipball/bb0beb130b6f1438b3e9471a500f92c6249f4f40",
+                "reference": "bb0beb130b6f1438b3e9471a500f92c6249f4f40",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0",
+                "skel/header": "~0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Skel\\": "src/"
+                }
+            },
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Kael Shipman",
+                    "email": "kael.shipman@gmail.com",
+                    "homepage": "https://colors.kaelshipman.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A basic Skel\\Config implemenation used to provide the base for application, database, cms, and other configurations settings.",
+            "keywords": [
+                "config",
+                "configuration",
+                "options"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/skelphp-config/tree/v0.2",
+                "issues": "https://github.com/kael-shipman/skelphp-config/issues"
+            },
+            "time": "2017-01-20T21:15:18+00:00"
+        },
+        {
+            "name": "skel/content-sync",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/skelphp-content-sync.git",
+                "reference": "0364fc4b725f3f20e43b5304cd452c4e663e3982"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/skelphp-content-sync/zipball/0364fc4b725f3f20e43b5304cd452c4e663e3982",
+                "reference": "0364fc4b725f3f20e43b5304cd452c4e663e3982",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "skel/db": "~0.0",
+                "skel/header": "~0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5",
+                "skel/cms": "~0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Skel\\": "src/"
+                }
+            },
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Kael Shipman",
+                    "email": "kael.shipman@gmail.com",
+                    "homepage": "https://colors.kaelshipman.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Skel ContentSync is a library for synchronizing content files with a Skel CMS database. It is intended to allow the user to manage content creation and editing in regular system files (which can be optionally version-controlled), while still providing the performance benefits of a database for the website. It is optimally used by creating a git repo for content files which has a post-recieve hook that calls a `sync-content.php` script on the main project every time a revision is pushed to the repo.",
+            "keywords": [
+                "cms",
+                "content management system",
+                "database"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/skelphp-content-sync/tree/v0.2",
+                "issues": "https://github.com/kael-shipman/skelphp-content-sync/issues"
+            },
+            "time": "2017-01-20T22:09:33+00:00"
+        },
+        {
+            "name": "skel/db",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/skelphp-db.git",
+                "reference": "831889c820365132c76026d4ca898746f680d412"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/skelphp-db/zipball/831889c820365132c76026d4ca898746f680d412",
+                "reference": "831889c820365132c76026d4ca898746f680d412",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "skel/component": "~0.0",
+                "skel/header": "~0.0",
+                "skel/traits": "~0.0",
+                "skel/uri": "~0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Skel\\": "src/"
+                }
+            },
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Kael Shipman",
+                    "email": "kael.shipman@gmail.com",
+                    "homepage": "https://colors.kaelshipman.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A basic implementation of a base class for a declarative database abstraction layer, inspired by Android's Db Helper concept.",
+            "keywords": [
+                "database",
+                "database abstraction layer",
+                "db",
+                "dbal"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/skelphp-db/tree/v0.2",
+                "issues": "https://github.com/kael-shipman/skelphp-db/issues"
+            },
+            "time": "2017-01-20T21:21:48+00:00"
+        },
+        {
+            "name": "skel/header",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/skelphp-header.git",
+                "reference": "1dcd0005a33385776b6a62a22685257510e441aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/skelphp-header/zipball/1dcd0005a33385776b6a62a22685257510e441aa",
+                "reference": "1dcd0005a33385776b6a62a22685257510e441aa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Interfaces.php",
+                    "src/Exceptions.php"
+                ]
+            },
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Kael Shipman",
+                    "email": "kael.shipman@gmail.com",
+                    "homepage": "https://colors.kaelshipman.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The Skel Header package is the core Skel Framework package. It is simply a set of interfaces that can be used by programmers to guide the creation of a Skel-compatible personal framework. It also contains Exception classes for convenience.",
+            "keywords": [
+                "framework",
+                "header",
+                "interface"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/skelphp-header/tree/dev",
+                "issues": "https://github.com/kael-shipman/skelphp-header/issues"
+            },
+            "time": "2017-01-20T18:07:14+00:00"
+        },
+        {
+            "name": "skel/http-foundation",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/skelphp-http-foundation.git",
+                "reference": "9dee1fc44dfc49ca80aaab9f174f802b446ff692"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/skelphp-http-foundation/zipball/9dee1fc44dfc49ca80aaab9f174f802b446ff692",
+                "reference": "9dee1fc44dfc49ca80aaab9f174f802b446ff692",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "skel/header": "~0.0",
+                "symfony/http-foundation": "~3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Skel\\": "src/"
+                }
+            },
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Kael Shipman",
+                    "email": "kael.shipman@gmail.com",
+                    "homepage": "https://colors.kaelshipman.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is a lazy implementation of the Skel HTTP interfaces. It basically just wraps the Symfony http abstraction components in objects that officially implement the skel http abstraction interfaces.",
+            "keywords": [
+                "abstraction",
+                "http",
+                "request",
+                "response"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/skelphp-http-foundation/tree/v0.2",
+                "issues": "https://github.com/kael-shipman/skelphp-http-foundation/issues"
+            },
+            "time": "2017-01-20T22:16:45+00:00"
+        },
+        {
+            "name": "skel/routing",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/skelphp-routing.git",
+                "reference": "1f8b2ec0ed41513174fe670a5e7e5ad272b5ba6c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/skelphp-routing/zipball/1f8b2ec0ed41513174fe670a5e7e5ad272b5ba6c",
+                "reference": "1f8b2ec0ed41513174fe670a5e7e5ad272b5ba6c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4",
+                "skel/header": "~0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Skel\\": "src/"
+                }
+            },
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Kael Shipman",
+                    "email": "kael.shipman@gmail.com",
+                    "homepage": "https://colors.kaelshipman.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A very basic routing package that provides both Routes and a Router for use in an routing a string to a specific piece of functionality.",
+            "keywords": [
+                "framework",
+                "request handling",
+                "router",
+                "routing"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/skelphp-routing/tree/v0.2.1",
+                "issues": "https://github.com/kael-shipman/skelphp-routing/issues"
+            },
+            "time": "2017-01-20T22:54:45+00:00"
+        },
+        {
+            "name": "skel/skel-blog-beta",
+            "version": "v1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/skel-blog-beta.git",
+                "reference": "a940e30d9f42b215d6900b787b55e213f97a5511"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/skel-blog-beta/zipball/a940e30d9f42b215d6900b787b55e213f97a5511",
+                "reference": "a940e30d9f42b215d6900b787b55e213f97a5511",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0",
+                "skel/app": "~0.0",
+                "skel/cms": "~0.0",
+                "skel/component": "~0.0",
+                "skel/config": "~0.0",
+                "skel/db": "~0.0",
+                "skel/header": "~0.0",
+                "skel/routing": "~0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "library",
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Kael Shipman",
+                    "email": "kael.shipman@gmail.com",
+                    "homepage": "https://colors.kaelshipman.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is a meta-package that comprises the official Skel implementations of the Skel Framework Interfaces pertinent to building a basic blog. It will update for every library release in the beta phase of development. See https://skel.kaelshipman.me for more information on the Skel Framework.",
+            "keywords": [
+                "blog",
+                "cms",
+                "framework",
+                "platform"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/skel-blog-beta/tree/v1.0",
+                "issues": "https://github.com/kael-shipman/skel-blog-beta/issues"
+            },
+            "time": "2017-01-24T00:14:15+00:00"
+        },
+        {
+            "name": "skel/traits",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/skelphp-traits.git",
+                "reference": "e10ed8360d0faba070d31008946768b71d117c07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/skelphp-traits/zipball/e10ed8360d0faba070d31008946768b71d117c07",
+                "reference": "e10ed8360d0faba070d31008946768b71d117c07",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Skel\\": "src/"
+                }
+            },
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Kael Shipman",
+                    "email": "kael.shipman@gmail.com",
+                    "homepage": "https://colors.kaelshipman.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "This is a package containing traits that fulfill various Skel interface requirements.",
+            "keywords": [
+                "partials",
+                "pieces",
+                "traits"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/skelphp-traits/tree/v0.2",
+                "issues": "https://github.com/kael-shipman/skelphp-traits/issues"
+            },
+            "time": "2017-01-20T18:49:00+00:00"
+        },
+        {
+            "name": "skel/uri",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kael-shipman/skelphp-uri.git",
+                "reference": "43c4c1035311da6446a555b8ab5541e51eb52410"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kael-shipman/skelphp-uri/zipball/43c4c1035311da6446a555b8ab5541e51eb52410",
+                "reference": "43c4c1035311da6446a555b8ab5541e51eb52410",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0",
+                "skel/header": ">0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Skel\\": "src/"
+                }
+            },
+            "license": [
+                "GPL3"
+            ],
+            "authors": [
+                {
+                    "name": "Kael Shipman",
+                    "email": "kael.shipman@gmail.com",
+                    "homepage": "https://colors.kaelshipman.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A basic implementation of a Uri class, derived largely from the Java implementation's interface",
+            "keywords": [
+                "parsing",
+                "uri",
+                "url"
+            ],
+            "support": {
+                "source": "https://github.com/kael-shipman/skelphp-uri/tree/v0.2",
+                "issues": "https://github.com/kael-shipman/skelphp-uri/issues"
+            },
+            "time": "2017-01-20T18:35:40+00:00"
+        },
+        {
+            "name": "symfony/http-foundation",
+            "version": "v3.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/http-foundation.git",
+                "reference": "33eb76bf1d833c705433e5361a646c164696394b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/33eb76bf1d833c705433e5361a646c164696394b",
+                "reference": "33eb76bf1d833c705433e5361a646c164696394b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9",
+                "symfony/polyfill-mbstring": "~1.1"
+            },
+            "require-dev": {
+                "symfony/expression-language": "~2.8|~3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\HttpFoundation\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony HttpFoundation Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-01-08T20:47:33+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "reference": "e79d363049d1c2128f133a2667e4f4190904f7f4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-mbstring": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Mbstring extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-11-14T01:06:16+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
