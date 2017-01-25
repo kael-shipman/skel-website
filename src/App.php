@@ -9,9 +9,15 @@ class App extends \Skel\App {
     return $this;
   }
 
+
+
+
+
+
+
   public function getPage(array $vars=array()) {
-    $file = $this->getFileFromVars($vars);
-    if (!$file) throw new \Skel\Http404Exception();
+    $file = $this->cms->getContentFileFromPath($vars);
+    if (!$file || !file_exists($file)) throw new \Skel\Http404Exception();
 
     $contentSync = new \Skel\ContentSynchronizerLib($this->config, $this->db, $this->cms);
     $mainContent = $contentSync->getObjectFromFile($file);
@@ -30,12 +36,6 @@ class App extends \Skel\App {
 
   public function prepareUiForError(\Skel\Interfaces\App $app, \Skel\Interfaces\Component $c, int $errCode) {
     return true;
-  }
-
-  protected function getFileFromVars($vars) {
-    if (count($vars) == 0) $vars = 'home';
-    else $vars = implode('/', $vars);
-    return $this->config->getContentPagesDir()."/$vars.md";
   }
 }
 
