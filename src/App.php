@@ -16,7 +16,7 @@ class App extends \Skel\App {
 
 
   public function getPage(array $vars=array()) {
-    $file = $this->cms->getContentFileFromPath($vars);
+    $file = $this->cms->getContentFileFromPath('/'.implode('/',$vars));
     if (!$file || !file_exists($file)) throw new \Skel\Http404Exception();
 
     $contentSync = new \Skel\ContentSynchronizerLib($this->config, $this->db, $this->cms);
