@@ -21,6 +21,24 @@ class Db extends \Skel\Db implements \Skel\Interfaces\AppDb, \Skel\Interfaces\Co
     return $t;
   }
 
+  public function getMenuItems(string $name=null) {
+    $items = array();
+    if (!$name || $name == '/') {
+      $items = array_merge($items, array(
+        '/' => 'Home',
+        '/docs' => 'Docs'
+      ));
+    }
+    if (!$name || $name == '/docs') {
+      $items  = array_merge($items, array(
+        '/docs/01-conceptual-overview' => 'Ch. 1: Conceptual Overview',
+        '/docs/02-skels-pieces--a-birds-eye-view' => 'Ch. 2: Skel\'s Pieces: A Bird\'s Eye View',
+        '/docs/AA-api-docs' => 'Apdx A: API Docs',
+      ));
+    }
+    return $items;
+  }
+
 
 
 

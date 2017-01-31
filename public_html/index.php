@@ -1,6 +1,7 @@
 <?php
 
 $loader = require_once '../vendor/autoload.php';
+$loader->add('Ks\\', __DIR__.'/../src');
 
 $config = new \Ks\Config(__DIR__.'/../config');
 

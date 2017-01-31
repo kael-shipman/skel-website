@@ -19,14 +19,27 @@ class App extends \Skel\App {
     $file = $this->cms->getContentFileFromPath('/'.implode('/',$vars));
     if (!$file || !file_exists($file)) throw new \Skel\Http404Exception();
 
+    $siteComponent = Components\SiteComponent::create($this);
     $contentSync = new \Skel\ContentSynchronizerLib($this->config, $this->db, $this->cms);
     $mainContent = $contentSync->getObjectFromFile($file);
+    $mainContent->setTemplate($this->getTemplate('PageComponent.php'));
+    $siteComponent['mainContent'] = $mainContent;
 
+    $mainContent['context'] = $this;
+    $siteComponent['context'] = $this;
+
+    return $siteComponent;
+  }
+
+  public function getFormattedContent(string $content) {
     $pde = new \Ks\ParsedownExtra();
-    $mainContent['content'] = $pde->text($mainContent['content']);
-    $mainContent->setTemplate(new \Skel\StringTemplate('<h1>##title##</h1>##content##', false));
+    return $pde->text($content);
+  }
 
-    return $mainContent;
+  public function getMenu(string $name) {
+    $items = $this->db->getMenuItems($name);
+    foreach($items as $uri => $title) $items[$uri] = '<a href="'.$uri.'" class="menu-item">'.$title.'</a>';
+    return $items;
   }
 
 
