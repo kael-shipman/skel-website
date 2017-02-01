@@ -31,9 +31,13 @@ class Db extends \Skel\Db implements \Skel\Interfaces\AppDb, \Skel\Interfaces\Co
     }
     if (!$name || $name == '/docs') {
       $items  = array_merge($items, array(
-        '/docs/01-conceptual-overview' => 'Ch. 1: Conceptual Overview',
-        '/docs/02-skels-pieces--a-birds-eye-view' => 'Ch. 2: Skel\'s Pieces: A Bird\'s Eye View',
-        '/docs/AA-api-docs' => 'Apdx A: API Docs',
+        '/docs/01-conceptual-overview' => 'Conceptual Overview',
+        '/docs/02-skels-pieces--a-birds-eye-view' => 'Skel\'s Pieces: A Bird\'s Eye View',
+        '/docs/03-a-sample-application' => 'A Sample Application',
+        '/docs/04-theory-in-depth' => 'Theory, In Depth',
+        '/docs/05-going-further' => 'Going Further',
+        '/docs/apx-a-api-docs' => 'API Docs',
+        '/docs/apx-b-best-practices' => 'Best Practices',
       ));
     }
     return $items;

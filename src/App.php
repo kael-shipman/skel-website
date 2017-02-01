@@ -41,6 +41,15 @@ class App extends \Skel\App {
     foreach($items as $uri => $title) {
       $selected = (preg_match('#^'.$uri.'($|/)#', $currentUri->getPath()) ? 'selected' : '');
       $items[$uri] = '<a href="'.$uri.'" class="menu-item '.$selected.'">'.$title.'</a>';
+      $submenu = $this->db->getMenuItems($uri);
+      if (count($submenu) > 0 && $uri != '/') {
+        $subitems = array();
+        foreach($submenu as $subUri => $subtitle) {
+          $selected = (preg_match('#^'.$subUri.'($|/)#', $currentUri->getPath()) ? 'selected' : '');
+          $submenu[$subUri] = '<a href="'.$subUri.'" class="menu-item '.$selected.'">'.$subtitle.'</a>';
+        }
+        $items[$uri] .= "\n        <div class=\"submenu\">\n          ".implode("\n          ", $submenu)."\n        </div>";
+      }
     }
     return $items;
   }

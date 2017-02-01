@@ -1,4 +1,4 @@
-    <article class="main-article <?= $sectionId ?>-page">
+    <article class="main-article">
       <header class="">
         <div class="content">
           <h2 class="page-title"><?= $title ?></h2>

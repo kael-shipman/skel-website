@@ -270,6 +270,16 @@ body.ks1 {
   max-width: 1000px;
 }
 
+.ks1 .site-header {
+	height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 900;
+}
+
 .ks1 .site-header .logo {
   position: fixed;
   width: 50px;
@@ -328,9 +338,21 @@ body.ks1 {
   color: inherit;
 }
 
+.ks1 .main-menu .submenu .menu-item {
+  /* Note: font sizes are specified twice because of IE Bug: https://connect.microsoft.com/IE/feedback/details/772679/ie10-not-recognizing-font-decloration-when-rem-is-used-as-font-size-unit-of-measure */
+  font: .9em/1.2 "Gillius ADF No 2", sans-serif;
+  font-size: .9rem;
+  margin: 0 0 0 auto;
+  padding: 8px 10px 8px 55px;
+}
+
 .ks1 .main-menu .menu-item.selected {
   background-color: #000;
   color: white;
+}
+
+.ks1 .main-menu .submenu .menu-item.selected {
+  background-color: #999;
 }
 
 
@@ -451,6 +473,8 @@ body.ks1 {
   top: 40px;
   left: 40px;
   bottom: 40px;
+  height: auto;
+  background-color: transparent;
   width: calc(50% - 250px);
   min-width: 250px;
   padding: 170px 30px 0 0;
@@ -502,6 +526,10 @@ body.ks1 {
   width: 150px; 
   position: relative;
   text-align: right;
+}
+
+.ks1 .main-menu .submenu .menu-item {
+  padding: 5px;
 }
 
 .ks1 .site-footer .license {
