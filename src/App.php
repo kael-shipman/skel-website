@@ -26,7 +26,6 @@ class App extends \Skel\App {
     $siteComponent['mainContent'] = $mainContent;
 
     $mainContent['context'] = $this;
-    $siteComponent['context'] = $this;
 
     return $siteComponent;
   }
@@ -37,8 +36,12 @@ class App extends \Skel\App {
   }
 
   public function getMenu(string $name) {
+    $currentUri = $this->request->getUri();
     $items = $this->db->getMenuItems($name);
-    foreach($items as $uri => $title) $items[$uri] = '<a href="'.$uri.'" class="menu-item">'.$title.'</a>';
+    foreach($items as $uri => $title) {
+      $selected = (preg_match('#^'.$uri.'($|/)#', $currentUri->getPath()) ? 'selected' : '');
+      $items[$uri] = '<a href="'.$uri.'" class="menu-item '.$selected.'">'.$title.'</a>';
+    }
     return $items;
   }
 
@@ -46,6 +49,13 @@ class App extends \Skel\App {
 
 
 
+
+  public function prepareSiteComponent(\Skel\Interfaces\App $app, \Skel\Interfaces\Component $c) {
+    if (!($c instanceof \Ks\Components\SiteComponent)) return true;
+    $c['context'] = $this;
+    $c['siteTitle'] = $c['mainContent']['title'].' | '.$c['siteTitle'];
+    return true;
+  }
 
   public function prepareUiForError(\Skel\Interfaces\App $app, \Skel\Interfaces\Component $c, int $errCode) {
     return true;

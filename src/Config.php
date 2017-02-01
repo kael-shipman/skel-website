@@ -7,5 +7,6 @@ class Config extends \Skel\Config implements \Skel\Interfaces\AppConfig, \Skel\I
   public function getDbPdo() { return $this->get('db'); }
   public function getDbContentRoot() { return $this->get('content-root'); }
   public function getContentPagesDir() { return $this->get('content-pages-dir'); }
+  public function getTemplateDir() { return $this->get('template-dir'); }
 }
 

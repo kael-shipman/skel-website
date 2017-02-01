@@ -8,35 +8,6 @@ var init = {
     // Email addresses
     Skel.Utils.convertEmailAddresses();
 
-    // Load any audio controls
-    var musicPlayers = document.getElementsByClassName('music-player'), audioControls;
-    for (var i = 0; i < musicPlayers.length; i++) {
-      if (musicPlayers[i].playerLoaded) continue;
-      musicPlayers[i].playerLoaded = true;
-
-      audioControls = musicPlayers[i].getElementsByClassName('control');
-      for (var j = 0; j < audioControls.length; j++) {
-        if (audioControls[j].classList.contains('audio-play')) {
-          audioControls[j].addEventListener('click', (function(player) {
-            return function(e) {
-              player.getElementsByTagName('audio')[0].play();
-              player.setAttribute('data-player-state', 'playing');
-              e.preventDefault();
-            }
-          })(musicPlayers[i]));
-        } else if (audioControls[j].classList.contains('audio-pause') || audioControls[j].classList.contains('audio-loading')) {
-          audioControls[j].addEventListener('click', (function(player) {
-            return function(e) {
-              player.getElementsByTagName('audio')[0].pause();
-              player.setAttribute('data-player-state', 'paused');
-              e.preventDefault();
-            }
-          })(musicPlayers[i]));
-        }
-      }
-    }
-
-
 
     // Load any photo carousels
     var iv, tm, cm;

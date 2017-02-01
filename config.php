@@ -13,5 +13,6 @@ return array(
   'content-root' => $contextRoot.'/content',
   'content-pages-dir' => $contextRoot.'/content/pages',
   'web-root' => $webRoot,
+  'template-dir' => $contextRoot.'/content/templates',
 );
 

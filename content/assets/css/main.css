@@ -143,11 +143,11 @@ input:focus {
 }
 
 /* Note: font sizes are specified twice because of IE Bug: https://connect.microsoft.com/IE/feedback/details/772679/ie10-not-recognizing-font-decloration-when-rem-is-used-as-font-size-unit-of-measure */
-h2 { font: normal 1.5em/1.4 'Quercus', sans-serif; font-size: 1.5rem; margin: 2rem 0 0; }
-h3 { font: normal 1.2em/1.4 'Quercus', sans-serif; font-size: 1.2rem; margin: 1.8rem 0 0; }
-h4 { font: normal 1.2em/1.4 'Quercus', sans-serif; font-size: 1.2rem; text-decoration: underline; margin: 1.5rem 0 0; }
-h5 { font: normal 1.0em/1.4 'Quercus', sans-serif; font-size: 1.0rem; margin: 1.3rem 0 0; }
-h6 { font: normal 1.0em/1.4 'Quercus', sans-serif; font-size: 1.0rem; color: #4D3D24; margin: 1.2rem 0 0; }
+h2 { font: normal 2.2em/1.4 'Quercus', sans-serif; font-size: 2.2rem; margin: 2rem 0 0; }
+h3 { font: normal 1.8em/1.4 'Quercus', sans-serif; font-size: 1.8rem; margin: 1.8rem 0 0; }
+h4 { font: normal 1.5em/1.4 'Quercus', sans-serif; font-size: 1.5rem; text-decoration: underline; margin: 1.5rem 0 0; }
+h5 { font: normal 1.3em/1.4 'Quercus', sans-serif; font-size: 1.3rem; margin: 1.3rem 0 0; }
+h6 { font: normal 1.2em/1.4 'Quercus', sans-serif; font-size: 1.2rem; color: #4D3D24; margin: 1.2rem 0 0; }
 
 ol, ul {
   padding: 0 1.5rem 0 3.2rem;
@@ -328,6 +328,11 @@ body.ks1 {
   color: inherit;
 }
 
+.ks1 .main-menu .menu-item.selected {
+  background-color: #000;
+  color: white;
+}
+
 
 
 
@@ -481,18 +486,20 @@ body.ks1 {
 .ks1 .site-header .main-menu {
   position: relative;
   padding: 2px 0;
+  display: block;
+  opacity: 1;
   max-height: calc(100vh - 240px);
 }
-.ks1.home .site-header .main-menu { display: block; opacity: 1; }
 
 .ks1 .main-menu .menu-item {
   /* Note: font sizes are specified twice because of IE Bug: https://connect.microsoft.com/IE/feedback/details/772679/ie10-not-recognizing-font-decloration-when-rem-is-used-as-font-size-unit-of-measure */
-  font: normal 2em/1.4 kaelshipmansans, handwriting, monospace;
-  font-size: 2rem;
+  font: normal 1.6em/1.4 kaelshipmansans, handwriting, monospace;
+  font-size: 1.5rem;
   display: block;
   margin: 10px 0 10px auto;
-  padding: 0;
-  width: 178px; 
+  padding: 5px;
+  border-radius: 4px;
+  width: 150px; 
   position: relative;
   text-align: right;
 }
