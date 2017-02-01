@@ -26,7 +26,8 @@ class Db extends \Skel\Db implements \Skel\Interfaces\AppDb, \Skel\Interfaces\Co
     if (!$name || $name == '/') {
       $items = array_merge($items, array(
         '/' => 'Home',
-        '/docs' => 'Docs'
+        'https://github.com/kael-shipman/skelphp-header' => 'Fork Skel',
+        '/docs' => 'Docs',
       ));
     }
     if (!$name || $name == '/docs') {
