@@ -16,16 +16,27 @@ class App extends \Skel\App {
 
 
   public function getPage(array $vars=array()) {
-    $file = $this->cms->getContentFileFromPath('/'.implode('/',$vars));
-    if (!$file || !file_exists($file)) throw new \Skel\Http404Exception();
+    $mainContent = $this->cms->getContentForPath('/'.implode('/',$vars));
+    if (!$mainContent) throw new \Skel\Http404Exception();
 
     $siteComponent = Components\SiteComponent::create($this);
-    $contentSync = new \Skel\ContentSynchronizerLib($this->config, $this->db, $this->cms);
-    $mainContent = $contentSync->getObjectFromFile($file);
     $mainContent->setTemplate($this->getTemplate('PageComponent.php'));
     $siteComponent['mainContent'] = $mainContent;
 
     $mainContent['context'] = $this;
+
+    // Conditional content
+
+    if ($vars['section'] == 'docs') {
+      $toc = $this->cms->getContentForPath('/docs/00-toc');
+      $mainContent['content'] = $mainContent['content']."\n\n-------------\n\n### Table of Contents\n\n".$toc['content'];
+      unset($toc);
+    }
+
+    if (strpos($mainContent['content'], '##whatIsSkel##') !== false) {
+      $whatIsSkel = file_get_contents($this->cms->getContentFileFromPath('/snippets/what-is-skel'));
+      $mainContent['content'] = str_replace('##whatIsSkel##', $whatIsSkel, $mainContent['content']);
+    }
 
     return $siteComponent;
   }

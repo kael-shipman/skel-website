@@ -1,7 +1,7 @@
 <?php
 namespace Ks;
 
-class Db extends \Skel\Db implements \Skel\Interfaces\AppDb, \Skel\Interfaces\ContentSyncDb {
+class Db extends \Skel\Db implements \Skel\Interfaces\AppDb {
   const VERSION = 1;
 
   public function upgradeDatabase(int $from, int $to) {
@@ -43,17 +43,5 @@ class Db extends \Skel\Db implements \Skel\Interfaces\AppDb, \Skel\Interfaces\Co
     }
     return $items;
   }
-
-
-
-
-  /***
-   * Stubbing out ContentSyncDb methods that we don't need
-   */
-
-  public function getContentFileList() { return array(); }
-  public function registerFileRename(string $prevPath, string $newPath) { }
-  public function filePathIsUnique(\Skel\Interfaces\ContentFile $file) { return true; }
-  public function fileContentIdIsUnique(\Skel\Interfaces\ContentFile $file) { return true; }
 }
 

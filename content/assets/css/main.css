@@ -162,6 +162,12 @@ h6 + ol, h6 + ul {
   margin-top: 0;
 }
 
+hr {
+  margin: 50px 0;
+  border: 1px solid #eee;
+  max-width: 400px;
+}
+
 .fixed-aspect {
   width: 100%;
   position: relative;
