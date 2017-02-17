@@ -80,5 +80,22 @@ class App extends \Skel\App {
   public function prepareUiForError(\Skel\Interfaces\App $app, \Skel\Interfaces\Component $c, int $errCode) {
     return true;
   }
+
+
+
+
+
+
+
+  // Overrides
+
+  public function getTemplate(string $name) {
+    $path = $this->config->getTemplateDir()."/$name";
+    $type = substr($path, strrpos($path, '.')+1);
+    if ($type == 'html') $t = new \Ks\StringTemplate($path);
+    elseif ($type == 'php') $t = new \Skel\PowerTemplate($path);
+    else $t = parent::getTemplate($name);
+    return $t;
+  }
 }
 
