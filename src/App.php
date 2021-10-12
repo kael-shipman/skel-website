@@ -26,7 +26,7 @@ class App extends \Skel\App {
     $mainContent['context'] = $this;
 
     // Abandonment notice
-    $mainContent['content'] = "<blockquote style=\"border: 2px solid #fe0; border-radius: 5px; margin: 10px; padding: 20px;\">\n<h3 style=\"margin: 0 0 10px;\">Project Abandoned</h3>\n\n<p style=\"font-weight: bold\">Warning! This project was really fun and a leared a lot, but it has now been abandoned. Feel free to rummage around here among the bones, but don't expect to find anything living here!</p>\n</blockquote>\n\n".$mainContent['content'];
+    $mainContent['content'] = "<blockquote style=\"border: 2px solid #fe0; border-radius: 5px; margin: 10px; padding: 20px;\">\n<h3 style=\"margin: 0 0 10px;\">Project Abandoned</h3>\n\n<p style=\"font-weight: bold\">Warning! This project was really fun and a learned a lot, but it has now been abandoned. Feel free to rummage around here among the bones, but don't expect to find anything living here!</p>\n</blockquote>\n\n".$mainContent['content'];
 
     // Conditional content
 
